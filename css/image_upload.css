@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #001f3f, #0066cc);
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.compare-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 800px;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:hover {
+    border-color: rgb(31, 35, 255);
+}
+
+.btn-compare {
+    background-color: #ffcc00;
+    color: #000000;
+    font-weight: bold;
+    padding: 12px;
+    margin: 20px;
+    width: 600px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-compare:hover {
+    background-color: #ffa500;
+    color: #ffffff;
+}
+
+#results {
+    display: none;
+}
+
+#results.visible {
+    display: block;
+    text-align: center;
+}
+
+.image-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.image-table td {
+    width: 50%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.results img {
+    margin-bottom: 0;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.error {
+    color: #ff4444;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.d-none {
+    display: none;
+}

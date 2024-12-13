@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UVision Currency - Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome to UVision Currency</h1>
+        <form id="loginForm">
+            <div class="error d-none" id="errorMessage"></div>
+            <div class="mb-3">
+                <input type="text" id="username" class="form-control" placeholder="Username" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" id="password" class="form-control" placeholder="Password" required>
+            </div>
+            <button type="button" class="btn-login" onclick="validateForm()">Login</button>
+        </form>
+    </div>
+    <footer>
+        <div>&copy; 2024 UVision Currency. All rights reserved.</div>
+    </footer>
+    <script src="/js/login.js"></script>
+</body>
+</html>

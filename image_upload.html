@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UVision Currency - Compare Images</title>
+    <link rel="stylesheet" href="/css/image_upload.css">
+</head>
+<body>
+    <div class="compare-container">
+        <h1>Upload Images for UV Comparison</h1>
+        <form id="compareForm">
+            <label for="file1" class="form-label">Upload Original Image:</label>
+            <input type="file" class="form-control" id="file1" required>
+            <label for="file2" class="form-label">Upload Comparison Image:</label>
+            <input type="file" class="form-control" id="file2" required> 
+            <button type="button" class="btn-compare" onclick="compareImages()">Compare Images</button>
+        </form>
+        <div id="results" class="results">
+            <h2>Results:</h2>
+            <h3>Original Image (UV):</h3>
+            <img id="uv1" src="#" alt="UV 1" width="300">
+            <h3>Comparison Image (UV):</h3>
+            <img id="uv2" src="#" alt="UV 2" width="300">
+        </div>
+        <p id="errorMessage" class="error d-none">Please upload both images to proceed.</p>
+    </div>
+    <script src="/js/image_upload.js"></script>
+
+</body>
+</html>
