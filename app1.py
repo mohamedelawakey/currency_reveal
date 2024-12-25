@@ -8,14 +8,17 @@ app = Flask(__name__)
 app.secret_key = "secret_key"
 
 # Folder configurations
+
 UPLOAD_FOLDER = 'static/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 # Ensure the upload folder exists
+
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # Check if file extension is allowed
+
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
